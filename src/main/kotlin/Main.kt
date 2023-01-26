@@ -9,10 +9,18 @@ fun main(args: Array<String>) {
 
     // val  --- are immutable
     // var  --- are mutuable
-    q.Question = ""
+
+    //q.Question = ""
+
+    q.display()
+    println("The answer to the question ${q.Answer} is ${q.Answer}")
 }
 
 class Question {
     var Answer:String = ""
     val Question: String = "What is the answer to life, he universe and everything?"
+
+    fun display(){
+        println("You said $Answer")
+    }
 }
